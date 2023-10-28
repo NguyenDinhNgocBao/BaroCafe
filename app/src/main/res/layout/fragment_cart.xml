@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CartFragment">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:background="#e7e7e7"
+        android:orientation="horizontal"
+        android:weightSum="16"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/baseline_arrow_back" />
+
+        <TextView
+            android:id="@+id/txtTilte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:text="CART"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_width="match_parent"
+        android:layout_height="607dp"
+        android:layout_below="@+id/panel"
+        android:layout_marginTop="-5dp"
+        android:padding="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuyAll"
+        android:layout_width="172dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/rvCart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/button"
+        android:text="Buy All"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTotalPrice"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvCart"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/btnBuyAll"
+        android:fontFamily="@font/alata"
+        android:text="TextView"
+        android:textColor="#D10606"
+        android:textSize="32dp" />
+
+</RelativeLayout>

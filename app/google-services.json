@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "60838348941",
+    "firebase_url": "https://unified-sensor-377304-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "unified-sensor-377304",
+    "storage_bucket": "unified-sensor-377304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60838348941:android:9893d458305916b116bac4",
+        "android_client_info": {
+          "package_name": "com.example.barocafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLSTqdnZXmIVFrsS2toGCPa4KlMcs0YgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
